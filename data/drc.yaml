@@ -1,6 +1,6 @@
 collection: https://raw.githubusercontent.com/CommonGateway/DocumentenAPI/main/OAS.yaml
 schemas:
-  Enkelvoudiginformatieobject:
+  EnkelvoudigInformatieObject:
   - properties:
       identificatie: string
       bronorganisatie: string
