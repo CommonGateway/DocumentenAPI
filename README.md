@@ -1,4 +1,4 @@
-# Pet Store API
+# Documenten API
 
 [![Automated Testing](https://github.com/CommonGateway/DocumentenAPI/actions/workflows/tests.yml/badge.svg)](https://github.com/CommonGateway/DocumentenAPI/actions/workflows/tests.yml)
 
