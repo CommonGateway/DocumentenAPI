@@ -3926,6 +3926,7 @@ components:
         - auteur
         - taal
         - informatieobjecttype
+      title: ''
     EnkelvoudigInformatieObjectCreateLockData:
       required:
         - bronorganisatie
@@ -4490,10 +4491,6 @@ components:
           type: string
           minLength: 1
     ObjectInformatieObject:
-      required:
-        - informatieobject
-        - object
-        - objectType
       type: object
       properties:
         url:
@@ -4501,14 +4498,11 @@ components:
           description: URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.
           type: string
           format: uri
-          readOnly: true
           maxLength: 1000
           minLength: 1
+          readOnly: true
         informatieobject:
-          title: Informatieobject
-          description: URL-referentie naar het INFORMATIEOBJECT.
-          type: string
-          format: uri
+          $ref: '#/components/schemas/EnkelvoudigInformatieObject'
         object:
           title: Object
           description: URL-referentie naar het gerelateerde OBJECT (in deze of een andere API).
@@ -4530,3 +4524,7 @@ components:
             - besluit
             - zaak
             - verzoek
+      required:
+        - informatieobject
+        - object
+        - objectType
